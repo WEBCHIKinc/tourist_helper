@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import MainCityPhoto from "./components/main-city-components/MainCityPhoto";
 import CityInfo from "./components/city-info/MainCityInfo";
 import MainCityNavbar from "./components/main-city-components/MainCityNavbar";

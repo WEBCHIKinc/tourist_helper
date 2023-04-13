@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import MainCityClock from "../main-city-components/MainCityClock";
+import Loader from "../Loader/Loader";
 
 const CityInfo = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -7,7 +9,7 @@ const CityInfo = () => {
   function cardMainMouseLeave() {
     hoverTimeout = setTimeout(() => {
       setIsHovered(false);
-    }, 2000);
+    }, 3000);
   }
 
   function cardMainMouseEnter() {
@@ -17,10 +19,15 @@ const CityInfo = () => {
 
   return (
     <div
-      className={`card card__main ${isHovered ? "hovered" : ""}`}
+      className={`card__main ${isHovered ? "hovered" : ""}`}
       onMouseEnter={cardMainMouseEnter}
       onMouseLeave={cardMainMouseLeave}
-    ></div>
+    >
+      <input className="input__main-city"></input>
+      <div className="box__main-currency">$</div>
+      <div className="box__main-temperature">20°C</div>
+      <MainCityClock />
+    </div>
   );
 };
 
