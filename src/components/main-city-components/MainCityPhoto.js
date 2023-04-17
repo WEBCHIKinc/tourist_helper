@@ -3,7 +3,7 @@ import image from "../../photo/1.jpg";
 
 const MainCityPhoto = () => {
   return (
-    <div className="card card__picture">
+    <div className="card">
       <img src={image}></img>
     </div>
   );

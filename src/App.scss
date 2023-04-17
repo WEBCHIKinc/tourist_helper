@@ -97,6 +97,7 @@ body {
   font-size: $primary-font-size;
   transition: border-bottom-color 0.25s ease-in-out;
   text-align: center;
+  height: 29px;
 }
 
 .input__main:focus {
@@ -107,7 +108,7 @@ body {
 .input__main-city {
   @extend .input__main;
   top: 30px;
-  left: 190px;
+  left: 195px;
   width: 150px;
 }
 
@@ -125,7 +126,7 @@ body {
 .box__main-currency {
   @extend .box__main;
   top: 30px;
-  right: 125px;
+  right: 120px;
   width: 45px;
 }
 
@@ -134,14 +135,36 @@ body {
   top: 30px;
   right: 30px;
   width: 65px;
-  color: $primary-color__black;
+}
+
+.box__main-weather-description {
+  @extend .box__main;
+  bottom: 80px;
+  right: 30px;
+  width: 65px;
+  height: 65px;
+  background-color: $background-color;
+}
+
+.box__main-city-map {
+  @extend .box__main;
+  bottom: 15px;
+  right: 135px;
+  width: 265px;
+  height: 130px;
+  background-color: $primary-color__black;
+  overflow: hidden;
+}
+
+.box__main-city-map img {
+  transform: scale(1.1);
 }
 
 .clock {
   @extend .box__main;
   top: 30px;
   left: 30px;
-  width: 130px;
+  width: 135px;
   font-weight: bold;
 }
 
