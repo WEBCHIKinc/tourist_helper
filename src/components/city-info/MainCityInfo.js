@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MainCityClock from "../main-city-components/MainCityClock";
+import MainCityClock from "./main-city-components/MainCityClock";
 import testMap from "../../photo/3534563463457457-min.jpg";
 import { useSelector } from "react-redux";
 

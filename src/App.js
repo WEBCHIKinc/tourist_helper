@@ -1,9 +1,9 @@
 import "./App.scss";
-import MainCityPhoto from "./components/main-city-components/MainCityPhoto";
 import CityInfo from "./components/city-info/MainCityInfo";
-import MainCityNavbar from "./components/main-city-components/MainCityNavbar";
 import { useSelector, useDispatch } from "react-redux";
 import { setIsHovered } from "./store/reducers/city-info";
+import MainCityPhoto from "./components/city-info/main-city-components/MainCityPhoto";
+import { MainCityNavbar } from "./components/city-info/main-city-components/MainCityNavbar";
 
 function App() {
   const dispatch = useDispatch();

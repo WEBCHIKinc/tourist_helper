@@ -1,0 +1,102 @@
+@import "../../App.scss";
+
+.card {
+  width: 550px;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__main {
+  @extend .card;
+  position: relative;
+  transition: transform 0.25s ease-out;
+  background-color: $primary-color__black;
+  z-index: 1;
+}
+
+.card__main.hovered {
+  transform: translateY(-45px);
+}
+
+.input__main {
+  position: absolute;
+  border: none;
+  color: $primary-color__black;
+  background-color: $primary-color__white;
+  border-radius: 10px;
+  border-bottom: 3px solid #727070;
+  padding: 5px;
+  font-size: $primary-font-size;
+  transition: border-bottom-color 0.25s ease-in-out;
+  text-align: center;
+  height: 29px;
+}
+
+.input__main:focus {
+  outline: none;
+  border-bottom-color: $background-color;
+}
+
+.input__main-city {
+  @extend .input__main;
+  top: 30px;
+  left: 195px;
+  width: 150px;
+}
+
+.box__main {
+  position: absolute;
+  color: $primary-color__black;
+  border-radius: 10px;
+  border-bottom: 3px solid #727070;
+  padding: 5px;
+  font-size: $primary-font-size;
+  background-color: $primary-color__white;
+  text-align: center;
+}
+
+.box__main-currency {
+  @extend .box__main;
+  top: 30px;
+  right: 120px;
+  width: 45px;
+}
+
+.box__main-temperature {
+  @extend .box__main;
+  top: 30px;
+  right: 30px;
+  width: 65px;
+}
+
+.box__main-weather-description {
+  @extend .box__main;
+  bottom: 80px;
+  right: 30px;
+  width: 65px;
+  height: 65px;
+  background-color: $background-color;
+}
+
+.box__main-city-map {
+  @extend .box__main;
+  bottom: 15px;
+  right: 135px;
+  width: 265px;
+  height: 130px;
+  background-color: $primary-color__black;
+  overflow: hidden;
+}
+
+.box__main-city-map img {
+  transform: scale(1.1);
+}

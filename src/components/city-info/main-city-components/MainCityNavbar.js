@@ -1,6 +1,7 @@
 import React from "react";
+import './mcc.scss'
 
-const MainCityNavbar = () => {
+ export const MainCityNavbar = () => {
   return (
     <div className="nav-bar">
       <button className="button1"> Converter</button>
@@ -9,4 +10,4 @@ const MainCityNavbar = () => {
   );
 };
 
-export default MainCityNavbar;
+
