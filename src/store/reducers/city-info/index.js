@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   isHovered: false,
+  cityName: "Kyiv",
 };
 
 export const cityInfoSlice = createSlice({
@@ -10,6 +11,9 @@ export const cityInfoSlice = createSlice({
   reducers: {
     setIsHovered: (state, action) => {
       state.isHovered = action.payload;
+    },
+    changeCityName: (state, action) => {
+      state.cityName = action.payload;
     },
   },
 });

@@ -1,19 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const weatherSlice = createSlice({
+const initialState = { mainCityWeather: {} };
+
+export const weatherSlice = createSlice({
   name: "weather",
-  initialState: {
-    value: 0,
-  },
+  initialState,
   reducers: {
-    incremented: (state) => {
-      state.value += 1;
-    },
-    decremented: (state) => {
-      state.value -= 1;
+    setMainCityWeather: (state, action) => {
+      state.mainCityWeather = action.payload;
     },
   },
 });
 
 export default weatherSlice.reducer;
-export const { incremented, decremented } = weatherSlice.actions;

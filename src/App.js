@@ -1,22 +1,21 @@
 import "./App.scss";
-import CityInfo from "./components/city-info/MainCityInfo";
-import { useSelector, useDispatch } from "react-redux";
-import { setIsHovered } from "./store/reducers/city-info";
+import CityInfo from "./components/city-info/main-city-info/MainCityInfo";
 import MainCityPhoto from "./components/city-info/main-city-components/MainCityPhoto";
 import { MainCityNavbar } from "./components/city-info/main-city-components/MainCityNavbar";
+import { useCityInfoActions } from "./hooks/useActions";
 
 function App() {
-  const dispatch = useDispatch();
+  const { setIsHovered } = useCityInfoActions();
   let hoverTimeout = null;
 
   function cardMainMouseLeave() {
     hoverTimeout = setTimeout(() => {
-      dispatch(setIsHovered(false));
+      setIsHovered(false);
     }, 3000);
   }
 
   function cardMainMouseEnter() {
-    dispatch(setIsHovered(true));
+    setIsHovered(true);
     clearTimeout(hoverTimeout);
   }
 
