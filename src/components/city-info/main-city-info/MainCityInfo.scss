@@ -21,10 +21,9 @@
   transition: transform 0.25s ease-out;
   background-color: $primary-color__black;
   z-index: 1;
-}
-
-.card__main.hovered {
-  transform: translateY(-45px);
+  .main__box:hover & {
+    transform: translateY(-45px);
+  }
 }
 
 .input__main {

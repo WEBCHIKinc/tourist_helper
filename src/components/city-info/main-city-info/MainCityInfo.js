@@ -9,7 +9,7 @@ import {
 import { openWeatherMapApi } from "../../../services/openWeatherMapService";
 
 const CityInfo = () => {
-  const { isHovered, cityName } = useSelector((state) => state.cityInfo);
+  const { cityName } = useSelector((state) => state.cityInfo);
   const { changeCityName } = useCityInfoActions();
   const { setMainCityWeather } = useWeatherActions();
   const weatherResponse = openWeatherMapApi.useGetWeatherQuery(cityName);
@@ -24,7 +24,7 @@ const CityInfo = () => {
   }
 
   return (
-    <div className={`card__main ${isHovered ? "hovered" : ""}`}>
+    <div className={"card__main"}>
       <input
         className="input__main-city"
         value={cityName}
