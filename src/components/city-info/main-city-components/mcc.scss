@@ -1,14 +1,15 @@
 @import "../main-city-info/MainCityInfo.scss";
 
 .nav-bar {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -40px;
 }
 
-.button__main {
-  position: absolute;
+.city-nav-button {
   width: 270px;
   height: 40px;
-  border-radius: 15px;
+  border-radius:20px 20px 50px 50px;
   padding: 5px 25px;
   background-color: $primary-color__black;
   color: $primary-color__white;
@@ -19,20 +20,8 @@
   cursor: pointer;
 }
 
-.button__main:hover {
+.city-nav-button:hover {
   background-color: rgb(68, 68, 68);
-}
-
-.button1 {
-  @extend .button__main;
-  bottom: 3px;
-  left: 5px;
-}
-
-.button2 {
-  @extend .button__main;
-  bottom: 3px;
-  right: 5px;
 }
 
 .clock {
