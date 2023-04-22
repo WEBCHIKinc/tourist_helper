@@ -16,7 +16,6 @@
 }
 
 .card__main {
-  @extend .card;
   position: relative;
   transition: transform 0.25s ease-out;
   background-color: $primary-color__black;
@@ -46,7 +45,6 @@
 }
 
 .input__main-city {
-  @extend .input__main;
   top: 30px;
   left: 195px;
   width: 150px;
@@ -64,21 +62,18 @@
 }
 
 .box__main-currency {
-  @extend .box__main;
   top: 30px;
   right: 120px;
   width: 45px;
 }
 
 .box__main-temperature {
-  @extend .box__main;
   top: 30px;
   right: 30px;
   width: 65px;
 }
 
 .box__main-weather-description {
-  @extend .box__main;
   bottom: 80px;
   right: 30px;
   width: 65px;
@@ -87,7 +82,6 @@
 }
 
 .box__main-city-map {
-  @extend .box__main;
   bottom: 15px;
   right: 135px;
   width: 265px;

@@ -18,7 +18,7 @@ const MainCityClock = () => {
   setInterval(updateTime, 1000);
 
   return (
-    <div className="clock">
+    <div className="box__main clock">
       <span>{hours}</span>:<span>{minutes}</span>:<span>{seconds}</span>
     </div>
   );

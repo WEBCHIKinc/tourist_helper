@@ -24,18 +24,18 @@ const CityInfo = () => {
   }
 
   return (
-    <div className={"card__main"}>
+    <div className={"card card__main"}>
       <input
-        className="input__main-city"
+        className="input__main input__main-city"
         value={cityName}
         onChange={handleCityNameChange}
       ></input>
-      <div className="box__main-currency">$</div>
-      <div className="box__main-temperature">20°C</div>
-      <div className="box__main-city-map">
+      <div className="box__main box__main-currency">$</div>
+      <div className="box__main box__main-temperature">20°C</div>
+      <div className="box__main box__main-city-map">
         <img src={testMap}></img>
       </div>
-      <div className="box__main-weather-description">
+      <div className="box__main box__main-weather-description">
         <img src="http://openweathermap.org/img/wn/04d@2x.png"></img>
       </div>
       <MainCityClock />
