@@ -7,14 +7,15 @@ import {
   useWeatherActions,
 } from "../../../hooks/useActions";
 import { openWeatherMapApi } from "../../../services/openWeatherMapService";
+import { ipApi } from "../../../services/ipApiService";
 
 const CityInfo = () => {
   const { cityName } = useSelector((state) => state.cityInfo);
   const { mainCityWeather } = useSelector((state) => state.weather);
-  const { changeCityName } = useCityInfoActions();
+  const { changeCityName, changeIpInfo } = useCityInfoActions();
   const { setMainCityWeather } = useWeatherActions();
   const weatherResponse = openWeatherMapApi.useGetWeatherQuery(cityName);
-
+  const ipResponse = ipApi.useGetIpInfoQuery();
   const [mainTemp, setMainTemp] = useState(0);
   const [mainIconCode, setMainIconCode] = useState("04d");
 
@@ -30,6 +31,10 @@ const CityInfo = () => {
   useEffect(() => {
     setMainCityWeather(weatherResponse.data);
   }, [weatherResponse.data]);
+
+  useEffect(() => {
+    changeIpInfo(ipResponse.data);
+  }, [ipResponse.data]);
 
   function handleCityNameChange(e) {
     const cityName = e.target.value;

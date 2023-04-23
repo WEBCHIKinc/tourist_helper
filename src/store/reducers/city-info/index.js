@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   cityName: "Kyiv",
+  ipInfo: null,
 };
 
 export const cityInfoSlice = createSlice({
@@ -10,6 +11,9 @@ export const cityInfoSlice = createSlice({
   reducers: {
     changeCityName: (state, action) => {
       state.cityName = action.payload;
+    },
+    changeIpInfo: (state, action) => {
+      state.ipInfo = action.payload;
     },
   },
 });
