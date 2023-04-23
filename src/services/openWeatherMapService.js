@@ -8,12 +8,12 @@ const baseParams = {
 export const openWeatherMapApi = createApi({
   reducerPath: "openWeatherMapApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://api.openweathermap.org/data/2.5/",
+    baseUrl: "http://api.openweathermap.org",
   }),
   endpoints: (builder) => ({
     getWeather: builder.query({
       query: (cityName) => ({
-        url: `weather?q=${cityName}`,
+        url: `/data/2.5/weather?q=${cityName}`,
         params: baseParams,
       }),
     }),

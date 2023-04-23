@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import MainCityClock from "../main-city-components/MainCityClock";
 import testMap from "../../../photo/3534563463457457-min.jpg";
 import { useSelector } from "react-redux";
@@ -10,9 +10,22 @@ import { openWeatherMapApi } from "../../../services/openWeatherMapService";
 
 const CityInfo = () => {
   const { cityName } = useSelector((state) => state.cityInfo);
+  const { mainCityWeather } = useSelector((state) => state.weather);
   const { changeCityName } = useCityInfoActions();
   const { setMainCityWeather } = useWeatherActions();
   const weatherResponse = openWeatherMapApi.useGetWeatherQuery(cityName);
+
+  const [mainTemp, setMainTemp] = useState(0);
+  const [mainIconCode, setMainIconCode] = useState("04d");
+
+  useEffect(() => {
+    try {
+      setMainTemp(Math.trunc(mainCityWeather.main.temp));
+      setMainIconCode(mainCityWeather.weather[0].icon);
+    } catch (error) {
+      // console.error(error);
+    }
+  }, [mainCityWeather]);
 
   useEffect(() => {
     setMainCityWeather(weatherResponse.data);
@@ -31,12 +44,12 @@ const CityInfo = () => {
         onChange={handleCityNameChange}
       ></input>
       <div className="box__main box__main-currency">$</div>
-      <div className="box__main box__main-temperature">20°C</div>
+      <div className="box__main box__main-temperature">{`${mainTemp}°C`}</div>
       <div className="box__main box__main-city-map">
-        <img src={testMap}></img>
+        <img src={testMap} />
       </div>
       <div className="box__main box__main-weather-description">
-        <img src="http://openweathermap.org/img/wn/04d@2x.png"></img>
+        <img src={`http://openweathermap.org/img/wn/${mainIconCode}@2x.png`} />
       </div>
       <MainCityClock />
     </div>
