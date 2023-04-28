@@ -15,6 +15,10 @@ const MainCityClock = () => {
     }
   }, [mainCityWeather]);
 
+  function toPadStart2(time) {
+    return time.toString().padStart(2, "0");
+  }
+
   function updateTime(currentTime) {
     if (currentTime - lastRenderTime < 1000) {
       requestAnimationFrame(updateTime);
@@ -27,7 +31,7 @@ const MainCityClock = () => {
     const minutes = now.getUTCMinutes();
     const seconds = now.getUTCSeconds();
 
-    setHours(hours.toString().padStart(2, "0"));
+    setHours(hours);
     setMinutes(minutes.toString().padStart(2, "0"));
     setSeconds(seconds.toString().padStart(2, "0"));
 
@@ -36,9 +40,19 @@ const MainCityClock = () => {
 
   requestAnimationFrame(updateTime);
 
+  function showHours(hours, timezone) {
+    hours = (hours * 3600 + timezone) / 3600;
+
+    if (hours >= 24) {
+      hours = hours - 24;
+      return toPadStart2(hours);
+    }
+    return toPadStart2(hours);
+  }
+
   return (
     <div className="box__main clock">
-      <span>{(hours * 3600 + timezone) / 3600}</span>:<span>{minutes}</span>:
+      <span>{showHours(hours, timezone)}</span>:<span>{minutes}</span>:
       <span>{seconds}</span>
     </div>
   );
