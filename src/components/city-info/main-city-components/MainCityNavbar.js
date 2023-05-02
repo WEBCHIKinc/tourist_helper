@@ -1,13 +1,11 @@
 import React from "react";
-import './mcc.scss'
+import "./mcc.scss";
 
- export const MainCityNavbar = () => {
+export const MainCityNavbar = () => {
   return (
     <div className="nav-bar">
-      <button className="city-nav-button"> Converter</button>
-      <button className="city-nav-button"> Weather forecast</button>
+      <button className="city-nav-button">Converter</button>
+      <button className="city-nav-button">Weather</button>
     </div>
   );
 };
-
-

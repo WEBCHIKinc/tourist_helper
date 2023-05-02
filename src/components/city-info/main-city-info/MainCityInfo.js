@@ -37,7 +37,7 @@ const CityInfo = () => {
   }, [ipResponse.data]);
 
   return (
-    <div className={"card card__main"}>
+    <div className={"card__info"}>
       <div className="box-info__main">Kyiv</div>
       <div className="box-info__main">Europe</div>
       <div className="box-info__main">UAH</div>
