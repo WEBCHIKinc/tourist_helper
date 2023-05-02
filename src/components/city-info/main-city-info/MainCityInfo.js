@@ -36,26 +36,11 @@ const CityInfo = () => {
     changeIpInfo(ipResponse.data);
   }, [ipResponse.data]);
 
-  function handleCityNameChange(e) {
-    const cityName = e.target.value;
-    changeCityName(cityName);
-  }
-
   return (
     <div className={"card card__main"}>
-      <input
-        className="input__main input__main-city"
-        value={cityName}
-        onChange={handleCityNameChange}
-      ></input>
-      <div className="box__main box__main-currency">$</div>
-      <div className="box__main box__main-temperature">{`${mainTemp}°C`}</div>
-      <div className="box__main box__main-city-map">
-        <img src={testMap} />
-      </div>
-      <div className="box__main box__main-weather-description">
-        <img src={`http://openweathermap.org/img/wn/${mainIconCode}@2x.png`} />
-      </div>
+      <div className="box-info__main">Kyiv</div>
+      <div className="box-info__main">Europe</div>
+      <div className="box-info__main">UAH</div>
       <MainCityClock />
     </div>
   );

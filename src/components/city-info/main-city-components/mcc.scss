@@ -1,32 +1,4 @@
 @import "../main-city-info/MainCityInfo.scss";
 
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -40px;
-}
-
-.city-nav-button {
-  width: 270px;
-  height: 40px;
-  border-radius: 20px 20px 50px 50px;
-  padding: 5px 25px;
-  background-color: $primary-color__black;
-  color: $primary-color__white;
-  text-align: center;
-  font-size: 15px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.city-nav-button:hover {
-  background-color: rgb(68, 68, 68);
-}
-
 .clock {
-  top: 30px;
-  left: 30px;
-  width: 135px;
-  font-weight: bold;
 }

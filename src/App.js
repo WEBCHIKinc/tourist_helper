@@ -6,10 +6,22 @@ import { MainCityNavbar } from "./components/city-info/main-city-components/Main
 function App() {
   return (
     <div className="App">
-      <div className="main__box">
-        <MainCityPhoto />
-        <CityInfo />
-        <MainCityNavbar />
+      <div className="city-browser-content">
+        <div className="main__box">
+          <MainCityPhoto />
+          <CityInfo />
+          <MainCityNavbar />
+        </div>
+        <div className="main__box">
+          <MainCityPhoto />
+          <CityInfo />
+          <MainCityNavbar />
+        </div>
+        <div className="main__box">
+          <MainCityPhoto />
+          <CityInfo />
+          <MainCityNavbar />
+        </div>
       </div>
     </div>
   );
