@@ -1,4 +1,5 @@
-@import "./components/city-photo/city-photo.scss";
+@import "./components/city-photo/CityPhoto.scss";
+@import "./components/city-info/CityInfo.scss";
 
 $background-color: #6bdea1cb;
 $primary-color__black: #252525;
@@ -36,8 +37,8 @@ body {
 }
 
 .main__box {
-  width: 20%;
-  // height: 200px;
+  width: 35%;
+  height: 390px;
   background-color: #818181;
   &:hover .card__info {
     transform: translateY(-40px);
@@ -78,24 +79,3 @@ body {
     background-color: rgb(68, 68, 68);
   }
 }
-
-// @media screen and (min-width: 768px) {
-//   .main__box:hover .card__info {
-//     transform: translateY(-40px);
-//   }
-//   .card__info {
-//     height: 50%;
-//   }
-//   .nav-bar {
-//     height: 15%;
-//     margin-top: -35px;
-//   }
-//   .city-browser-content {
-//     flex-direction: row;
-//   }
-//   .main__box {
-//     width: 20%;
-//     height: 35%;
-//   }
-
-// }

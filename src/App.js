@@ -1,8 +1,8 @@
 import "./App.scss";
-import CityInfo from "./components/city-info/main-city-info/MainCityInfo";
-import MainCityPhoto from "./components/city-info/main-city-components/MainCityPhoto";
+import { CityInfo } from "./components/city-info/CityInfo";
+
 import { MainCityNavbar } from "./components/city-info/main-city-components/MainCityNavbar";
-import { CityPhoto } from "./components/city-photo/city-photo";
+import { CityPhoto } from "./components/city-photo/CityPhoto";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <div className="main__box">
           <CityPhoto />
           <CityInfo />
-          <MainCityNavbar />
+          {/* <MainCityNavbar /> */}
         </div>
       </div>
     </div>
