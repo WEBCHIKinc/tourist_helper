@@ -1,0 +1,9 @@
+.city-card {
+  width: 35%;
+  height: 390px;
+  background-color: #818181;
+  border-radius: 10px;
+  &:hover .city-info {
+    transform: translateY(-55px);
+  }
+}

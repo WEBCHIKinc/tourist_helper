@@ -3,8 +3,11 @@
   height: 150px;
   margin: 0 20px 0 20px;
   font-size: 20px;
+  transition: transform 0.25s ease-out;
+  background-color: #818181;
+  z-index: 1;
 }
 
 .city-name {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
