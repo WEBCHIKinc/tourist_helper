@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const MainCityNavbar = () => {
+export const CityNavbar = () => {
   return (
     <div className="city-nav-bar">
       <button className="city-nav-button">Converter</button>
