@@ -1,9 +1,17 @@
-# EditorConfig is awesome: https://EditorConfig.org
-
-# top-most EditorConfig file
 root = true
 
 [*]
+# Project settings
 indent_style = space
-trim_trailing_whitespace = false
 indent_size = 2
+ij_any_blank_lines_around_method = 0
+
+# Unchanged settings
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{md, txt}]
+indent_size = unset
+trim_trailing_whitespace = false

@@ -1,7 +1,7 @@
-import { bindActionCreators } from "@reduxjs/toolkit";
-import { useDispatch } from "react-redux";
-import { cityInfoSlice } from "../store/reducers/city-info";
-import { weatherSlice } from "../store/reducers/weather";
+import { bindActionCreators } from '@reduxjs/toolkit';
+import { useDispatch } from 'react-redux';
+import { cityInfoSlice } from '../store/reducers/city-info';
+import { weatherSlice } from '../store/reducers/weather';
 
 export const useCityInfoActions = () => {
   const dispatch = useDispatch();

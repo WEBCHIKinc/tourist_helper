@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 const MainCityClock = () => {
-  const [hours, setHours] = useState("00");
-  const [minutes, setMinutes] = useState("00");
-  const [seconds, setSeconds] = useState("00");
+  const [hours, setHours] = useState('00');
+  const [minutes, setMinutes] = useState('00');
+  const [seconds, setSeconds] = useState('00');
   const [timezone, setTimezone] = useState(0);
   const { mainCityWeather } = useSelector((state) => state.weather);
   let lastRenderTime = 0;
@@ -16,7 +16,7 @@ const MainCityClock = () => {
   }, [mainCityWeather]);
 
   function toPadStart2(time) {
-    return time.toString().padStart(2, "0");
+    return time.toString().padStart(2, '0');
   }
 
   function updateTime(currentTime) {
@@ -32,8 +32,8 @@ const MainCityClock = () => {
     const seconds = now.getUTCSeconds();
 
     setHours(hours);
-    setMinutes(minutes.toString().padStart(2, "0"));
-    setSeconds(seconds.toString().padStart(2, "0"));
+    setMinutes(minutes.toString().padStart(2, '0'));
+    setSeconds(seconds.toString().padStart(2, '0'));
 
     requestAnimationFrame(updateTime);
   }

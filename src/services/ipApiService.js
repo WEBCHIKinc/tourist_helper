@@ -1,18 +1,18 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 const baseParams = {};
 
 export const ipApi = createApi({
-  reducerPath: "ipApi",
+  reducerPath: 'ipApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://ipapi.co/",
+    baseUrl: 'https://ipapi.co/'
   }),
   endpoints: (builder) => ({
     getIpInfo: builder.query({
       query: () => ({
-        url: "/json/",
-        params: baseParams,
-      }),
-    }),
-  }),
+        url: '/json/',
+        params: baseParams
+      })
+    })
+  })
 });

@@ -1,5 +1,5 @@
-import "./App.scss";
-import { CityCard } from "./components/city-card/CityCard";
+import './App.scss';
+import { CityCard } from './components/city-card/CityCard';
 
 function App() {
   return (

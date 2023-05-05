@@ -1,9 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const currencySlice = createSlice({
-  name: "currency",
+  name: 'currency',
   initialState: {},
-  reducers: {},
+  reducers: {}
 });
 
 export default currencySlice.reducer;
