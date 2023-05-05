@@ -6,16 +6,16 @@ export const CityInfo = () => {
       <h2 className="city-name">City name</h2>
       <div>
         <p>
-          <strong>Location:</strong> Location
+          Location: Location
         </p>
         <p>
-          <strong>Language:</strong> English
+          Language: English
         </p>
         <p>
-          <strong>Currency:</strong> USD
+          Currency: USD
         </p>
         <p>
-          <strong>Timezone:</strong> GMT+2
+          Timezone: GMT+2
         </p>
       </div>
     </div>

@@ -1,11 +1,14 @@
 .city-info {
-  position: relative;
-  height: 150px;
-  margin: 0 20px 0 20px;
-  font-size: 20px;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.5vw;
   transition: transform 0.25s ease-out;
-  background-color: #818181;
+  background-color: $background-color__card;
   z-index: 1;
+
+  @media (pointer: coarse) {
+    transform: translateY(-55px);
+  }
 }
 
 .city-name {

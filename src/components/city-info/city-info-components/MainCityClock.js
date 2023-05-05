@@ -52,7 +52,8 @@ const MainCityClock = () => {
 
   return (
     <div className="box-info__main clock">
-      <span>{showHours(hours, timezone)}</span>:<span>{minutes}</span>:
+      <span>{showHours(hours, timezone)}</span>:
+      <span>{minutes}</span>:
       <span>{seconds}</span>
     </div>
   );

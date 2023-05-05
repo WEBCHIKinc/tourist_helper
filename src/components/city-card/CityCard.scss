@@ -1,7 +1,7 @@
 .city-card {
   width: 30%;
   padding: 20px;
-  background-color: #818181;
+  background-color: $background-color__card;
   border-radius: 10px;
   &:hover .city-info {
     transform: translateY(-55px);
