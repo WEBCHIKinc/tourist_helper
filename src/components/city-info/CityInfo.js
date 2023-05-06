@@ -1,9 +1,10 @@
 import React from 'react';
+import { CityName } from '../city-name/CityName';
 
 export const CityInfo = () => {
   return (
     <div className="city-info">
-      <h2 className="city-name">City name</h2>
+      <CityName />
       <div>
         <p>
           Location: Location

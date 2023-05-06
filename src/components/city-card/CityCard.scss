@@ -3,7 +3,10 @@
   padding: 20px;
   background-color: $background-color__card;
   border-radius: 10px;
-  &:hover .city-info {
-    transform: translateY(-5vh);
+  &:hover {
+    .city-info,
+    .city-weather-box {
+      transform: translateY(-5vh);
+    }
   }
 }
