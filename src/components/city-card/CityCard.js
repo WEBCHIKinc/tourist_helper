@@ -9,9 +9,9 @@ export const CityCard = () => {
   return (
     <div className="city-card">
       <CityPhoto />
-      {/* <CityInfo/> */}
+      <CityInfo/>
       {/* <CityWeather /> */}
-      <CityCurrencyConverter />
+      {/* <CityCurrencyConverter /> */}
       <CityNavbar />
     </div>
   );

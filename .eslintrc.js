@@ -101,6 +101,11 @@ module.exports = {
     //"react/wrap-multilines": 2,
     'func-names': 0,
     'no-debugger': 1,
-    'no-alert': 2
+    'no-alert': 2,
+    'editorconfig/charset': 'error',
+    'editorconfig/eol-last': 'error',
+    'editorconfig/indent': 'error',
+    'editorconfig/linebreak-style': 'error',
+    'editorconfig/no-trailing-spaces': 'error'
   }
 };
