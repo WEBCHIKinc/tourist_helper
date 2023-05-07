@@ -5,8 +5,4 @@
   transition: transform 0.25s ease-out;
   background-color: $background-color__card;
   z-index: 1;
-
-  @media (pointer: coarse) {
-    transform: translateY(-5vh);
-  }
 }

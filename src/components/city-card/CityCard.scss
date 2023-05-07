@@ -5,7 +5,15 @@
   border-radius: 10px;
   &:hover {
     .city-info,
-    .city-weather-box {
+    .city-weather-box,
+    .city-currency-converter {
+      transform: translateY(-5vh);
+    }
+  }
+  @media (pointer: coarse) {
+    .city-info,
+    .city-weather-box,
+    .city-currency-converter {
       transform: translateY(-5vh);
     }
   }

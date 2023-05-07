@@ -2,12 +2,9 @@
   transition: transform 0.25s ease-out;
   position: relative;
   width: 100%;
-  font-size: 1.5vw;
+  font-size: $primary-font-size;
   background-color: $background-color__card;
   z-index: 1;
-  @media (pointer: coarse) {
-    transform: translateY(-5vh);
-  }
 }
 
 .city-weather {
