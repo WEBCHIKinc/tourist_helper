@@ -5,11 +5,11 @@ export const CityInfo = () => {
   return (
     <div className="city-info">
       <CityName />
-      <ul style={{ listStyleType: 'none' }}>
-        <li>Location: Location</li>
-        <li>Language: English</li>
-        <li>Currency: USD</li>
-        <li>Timezone: GMT+2</li>
+      <ul className="city-info-entries">
+        <li className="city-info-entry"><span className="city-info-caption">Location</span>Kyiv</li>
+        <li className="city-info-entry"><span className="city-info-caption">Language</span>English</li>
+        <li className="city-info-entry"><span className="city-info-caption">Currency</span>USD</li>
+        <li className="city-info-entry"><span className="city-info-caption">Timezone</span>GMT+2</li>
       </ul>
     </div>
   );

@@ -5,3 +5,13 @@
   background-color: $background-color__card;
   z-index: 1;
 }
+
+.city-info-entries {
+  list-style-type: none;
+}
+
+.city-info-caption {
+  &::after {
+    content: ": ";
+  }
+}
