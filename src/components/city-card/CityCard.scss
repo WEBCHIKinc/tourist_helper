@@ -1,20 +1,34 @@
 .city-card {
-  width: 30%;
   padding: 20px;
   background-color: $background-color__card;
   border-radius: 10px;
   &:hover {
     .city-info,
-    .city-weather-box,
+    .city-weather,
     .city-currency-converter {
       transform: translateY(-5vh);
     }
   }
   @media (pointer: coarse) {
     .city-info,
-    .city-weather-box,
+    .city-weather,
     .city-currency-converter {
       transform: translateY(-5vh);
     }
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+  @media (min-width: 768px) and (max-width: 996px) {
+    width: 220px;
+  }
+  @media (min-width: 997px) and (max-width: 1199px) {
+    width: 250px;
+  }
+  @media (min-width: 1200px) and (max-width: 1599px) {
+    width: 300px;
+  }
+  @media (min-width: 1600px) {
+    width: 420px;
   }
 }

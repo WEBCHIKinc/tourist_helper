@@ -2,7 +2,7 @@ $background-color: #6bdea1c4;
 $background-color__card: #818181;
 $primary-color__black: #25252589;
 $primary-color__white: #e9e8e8;
-$primary-font-size: 1.5vw;
+$primary-font-size__pc: 25px;
 
 @import "./components/city-photo/CityPhoto.scss";
 @import "./components/city-info/CityInfo.scss";

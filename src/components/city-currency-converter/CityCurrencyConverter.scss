@@ -1,7 +1,7 @@
 .city-currency-converter {
   position: relative;
   width: 100%;
-  font-size: $primary-font-size;
+  font-size: $primary-font-size__pc;
   transition: transform 0.25s ease-out;
   background-color: $background-color__card;
   z-index: 1;
@@ -17,7 +17,7 @@
 .city-currency-converter__select,
 .city-currency-converter__button {
   width: 30%;
-  font-size: $primary-font-size;
+  font-size: $primary-font-size__pc;
 }
 
 .city-currency-converter__button,
