@@ -1,7 +1,11 @@
 import React from 'react';
 import { CityName } from '../city-name/CityName';
+import { cityService } from '../../services/cityService';
 
 export const CityInfo = () => {
+
+  console.log(cityService.getCities());
+
   return (
     <div className="city-info">
       <CityName />

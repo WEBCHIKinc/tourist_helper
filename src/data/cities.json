@@ -1,0 +1,116 @@
+{
+  "cities": [
+    {
+      "id": 1,
+      "name": "New York City",
+      "currency": "USD",
+      "timezone": "America/New_York",
+      "country": "United States"
+    },
+    {
+      "id": 2,
+      "name": "London",
+      "currency": "GBP",
+      "timezone": "Europe/London",
+      "country": "United Kingdom"
+    },
+    {
+      "id": 3,
+      "name": "Paris",
+      "currency": "EUR",
+      "timezone": "Europe/Paris",
+      "country": "France"
+    },
+    {
+      "id": 4,
+      "name": "Tokyo",
+      "currency": "JPY",
+      "timezone": "Asia/Tokyo",
+      "country": "Japan"
+    },
+    {
+      "id": 5,
+      "name": "Sydney",
+      "currency": "AUD",
+      "timezone": "Australia/Sydney",
+      "country": "Australia"
+    },
+    {
+      "id": 6,
+      "name": "Berlin",
+      "currency": "EUR",
+      "timezone": "Europe/Berlin",
+      "country": "Germany"
+    },
+    {
+      "id": 7,
+      "name": "Toronto",
+      "currency": "CAD",
+      "timezone": "America/Toronto",
+      "country": "Canada"
+    },
+    {
+      "id": 8,
+      "name": "Dubai",
+      "currency": "AED",
+      "timezone": "Asia/Dubai",
+      "country": "United Arab Emirates"
+    },
+    {
+      "id": 9,
+      "name": "Mexico City",
+      "currency": "MXN",
+      "timezone": "America/Mexico_City",
+      "country": "Mexico"
+    },
+    {
+      "id": 10,
+      "name": "Rio de Janeiro",
+      "currency": "BRL",
+      "timezone": "America/Sao_Paulo",
+      "country": "Brazil"
+    },
+    {
+      "id": 11,
+      "name": "Moscow",
+      "currency": "RUB",
+      "timezone": "Europe/Moscow",
+      "country": "Russia"
+    },
+    {
+      "id": 12,
+      "name": "Seoul",
+      "currency": "KRW",
+      "timezone": "Asia/Seoul",
+      "country": "South Korea"
+    },
+    {
+      "id": 13,
+      "name": "Cape Town",
+      "currency": "ZAR",
+      "timezone": "Africa/Johannesburg",
+      "country": "South Africa"
+    },
+    {
+      "id": 14,
+      "name": "Mumbai",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "country": "India"
+    },
+    {
+      "id": 15,
+      "name": "Madrid",
+      "currency": "EUR",
+      "timezone": "Europe/Madrid",
+      "country": "Spain"
+    },
+    {
+      "id": 16,
+      "name": "Rome",
+      "currency": "EUR",
+      "timezone": "Europe/Rome",
+      "country": "Italy"
+    }
+  ]
+}
