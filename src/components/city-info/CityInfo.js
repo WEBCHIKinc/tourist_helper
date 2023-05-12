@@ -4,7 +4,7 @@ import { cityService } from '../../services/cityService';
 
 export const CityInfo = () => {
 
-  console.log(cityService.getCities());
+  // console.log(cityService.getCities());
 
   return (
     <div className="city-info">

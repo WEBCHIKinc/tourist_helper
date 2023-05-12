@@ -104,7 +104,7 @@ module.exports = {
     'no-alert': 2,
     'editorconfig/charset': 'error',
     'editorconfig/eol-last': 'error',
-    'editorconfig/indent': 'error',
+    // 'editorconfig/indent': 'error',
     'editorconfig/linebreak-style': 'error',
     'editorconfig/no-trailing-spaces': 'error'
   }

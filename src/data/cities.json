@@ -4,112 +4,105 @@
       "id": 1,
       "name": "New York City",
       "currency": "USD",
-      "timezone": "America/New_York",
+      "timezone": "GMT-4",
       "country": "United States"
     },
     {
       "id": 2,
       "name": "London",
       "currency": "GBP",
-      "timezone": "Europe/London",
+      "timezone": "GMT+1",
       "country": "United Kingdom"
     },
     {
       "id": 3,
       "name": "Paris",
       "currency": "EUR",
-      "timezone": "Europe/Paris",
+      "timezone": "GMT+2",
       "country": "France"
     },
     {
       "id": 4,
       "name": "Tokyo",
       "currency": "JPY",
-      "timezone": "Asia/Tokyo",
+      "timezone": "GMT+9",
       "country": "Japan"
     },
     {
       "id": 5,
       "name": "Sydney",
       "currency": "AUD",
-      "timezone": "Australia/Sydney",
+      "timezone": "GMT+10",
       "country": "Australia"
     },
     {
       "id": 6,
       "name": "Berlin",
       "currency": "EUR",
-      "timezone": "Europe/Berlin",
+      "timezone": "GMT+2",
       "country": "Germany"
     },
     {
       "id": 7,
       "name": "Toronto",
       "currency": "CAD",
-      "timezone": "America/Toronto",
+      "timezone": "GMT-4",
       "country": "Canada"
     },
     {
       "id": 8,
       "name": "Dubai",
       "currency": "AED",
-      "timezone": "Asia/Dubai",
+      "timezone": "GMT+4",
       "country": "United Arab Emirates"
     },
     {
       "id": 9,
       "name": "Mexico City",
       "currency": "MXN",
-      "timezone": "America/Mexico_City",
+      "timezone": "GMT-5",
       "country": "Mexico"
     },
     {
       "id": 10,
       "name": "Rio de Janeiro",
       "currency": "BRL",
-      "timezone": "America/Sao_Paulo",
+      "timezone": "GMT-3",
       "country": "Brazil"
-    },
-    {
-      "id": 11,
-      "name": "Moscow",
-      "currency": "RUB",
-      "timezone": "Europe/Moscow",
-      "country": "Russia"
     },
     {
       "id": 12,
       "name": "Seoul",
       "currency": "KRW",
-      "timezone": "Asia/Seoul",
+      "timezone": "GMT+9",
       "country": "South Korea"
     },
     {
       "id": 13,
       "name": "Cape Town",
       "currency": "ZAR",
-      "timezone": "Africa/Johannesburg",
+      "timezone": "GMT+2",
       "country": "South Africa"
     },
     {
       "id": 14,
       "name": "Mumbai",
       "currency": "INR",
-      "timezone": "Asia/Kolkata",
+      "timezone": "GMT+5:30",
       "country": "India"
     },
     {
       "id": 15,
       "name": "Madrid",
       "currency": "EUR",
-      "timezone": "Europe/Madrid",
+      "timezone": "GMT+2",
       "country": "Spain"
     },
     {
       "id": 16,
       "name": "Rome",
       "currency": "EUR",
-      "timezone": "Europe/Rome",
+      "timezone": "GMT+2",
       "country": "Italy"
     }
   ]
