@@ -1,19 +1,16 @@
 import React from 'react';
 import { CityName } from '../city-name/CityName';
-import { cityService } from '../../services/cityService';
 
-export const CityInfo = () => {
-
-  // console.log(cityService.getCities());
+export const CityInfo = ({cityData}) => {
 
   return (
     <div className="city-info">
-      <CityName />
+      <CityName cityName={cityData.name}/>
       <ul className="city-info-entries">
-        <li className="city-info-entry"><span className="city-info-caption">Location</span>Kyiv</li>
-        <li className="city-info-entry"><span className="city-info-caption">Language</span>English</li>
-        <li className="city-info-entry"><span className="city-info-caption">Currency</span>USD</li>
-        <li className="city-info-entry"><span className="city-info-caption">Timezone</span>GMT+2</li>
+        <li className="city-info-entry"><span className="city-info-caption">Location</span>{cityData.country}</li>
+        <li className="city-info-entry"><span className="city-info-caption">Language</span>{cityData.language}</li>
+        <li className="city-info-entry"><span className="city-info-caption">Currency</span>{cityData.currency}</li>
+        <li className="city-info-entry"><span className="city-info-caption">Timezone</span>{cityData.timezone}</li>
       </ul>
     </div>
   );

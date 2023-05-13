@@ -1,7 +1,7 @@
 import React from 'react';
 
-export const CityName = () => {
+export const CityName = ({cityName}) => {
   return (
-    <h2 className="city-name">City name</h2>
+    <h2 className="city-name">{cityName}</h2>
   );
 };
