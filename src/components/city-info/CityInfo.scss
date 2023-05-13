@@ -4,6 +4,7 @@
   transition: transform 0.25s ease-out;
   background-color: $background-color__card;
   z-index: 1;
+  @include slow-appearance;
 }
 
 .city-info-entries {

@@ -4,6 +4,26 @@ $primary-color__black: #25252589;
 $primary-color__white: #e9e8e8;
 $primary-font-size__pc: 25px;
 
+@mixin slow-appearance {
+  animation-name: slowAppearance;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes #{slowAppearance} {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @import "./components/city-photo/CityPhoto.scss";
 @import "./components/city-info/CityInfo.scss";
 @import "./components/city-navbar/CityNavbar.scss";
@@ -15,10 +35,13 @@ $primary-font-size__pc: 25px;
 * {
   margin: 0;
   padding: 0;
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Нормализация */
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 body {

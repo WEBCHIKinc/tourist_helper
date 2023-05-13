@@ -5,6 +5,7 @@
   font-size: $primary-font-size__pc;
   background-color: $background-color__card;
   z-index: 1;
+  @include slow-appearance;
 }
 
 .city-weather__box {
