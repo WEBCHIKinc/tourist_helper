@@ -5,15 +5,16 @@
   &:hover {
     .city-info,
     .city-weather,
-    .city-currency-converter {
-      transform: translateY(-5vh);
+    .city-currency-converter,
+    .city-name {
+      transform: translateY(-35px);
     }
   }
   @media (pointer: coarse) {
     .city-info,
     .city-weather,
     .city-currency-converter {
-      transform: translateY(-5vh);
+      transform: translateY(-35px);
     }
   }
   @media (max-width: 767px) {

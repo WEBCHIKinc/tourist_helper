@@ -1,10 +1,8 @@
 import React from 'react';
-import { CityName } from '../city-name/CityName';
 
 export const CityCurrencyConverter = () => {
   return (
     <div className='city-currency-converter'>
-      <CityName />
       Convert to city currency
       <div className='city-currency-converter__box'>
         <input className='city-currency-converter__input' />

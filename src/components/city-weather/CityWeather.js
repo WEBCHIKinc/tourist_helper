@@ -1,21 +1,32 @@
 import React from 'react';
-import { CityName } from '../city-name/CityName';
+import { openWeatherMapApi } from '../../services/openWeatherMapService';
 
-export const CityWeather = () => {
-  const iconURL = 'http://openweathermap.org/img/wn/04d@2x.png';
+export const CityWeather = ({ cityData }) => {
+  const { data, isSuccess } = openWeatherMapApi.useGetWeatherQuery(cityData.name);
+  let iconURL = '';
+  let temperature = '';
+  let description = '';
+  let wind = '';
+
+  if (isSuccess) {
+    const iconCode = data.weather[0].icon;
+    temperature = data.main.temp;
+    description = data.weather[0].description;
+    wind = `gusts ${data.wind.gust}m/s`;
+    iconURL = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+  }
 
   return (
     <div className='city-weather'>
-      <CityName />
       <div className='city-weather__box'>
-        <img className='weather-icon' src={iconURL} />
+        <img className='weather-icon' src={iconURL} alt='icon' />
         <div className='city-weather__main-info'>
-          <h2>19°C</h2>
+          <h2>{temperature}</h2>
           <p>
-            Partly Cloudy
+            {description}
           </p>
           <p>
-            gusts 7m/s
+            {wind}
           </p>
         </div>
       </div>
