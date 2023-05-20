@@ -17,19 +17,19 @@
       transform: translateY(-35px);
     }
   }
-  @media (max-width: 767px) {
+  @media #{$xs} {
     width: 100%;
   }
-  @media (min-width: 768px) and (max-width: 996px) {
+  @media #{$sm} {
     width: 220px;
   }
-  @media (min-width: 997px) and (max-width: 1199px) {
+  @media #{$md} {
     width: 250px;
   }
-  @media (min-width: 1200px) and (max-width: 1599px) {
+  @media #{$lg} {
     width: 300px;
   }
-  @media (min-width: 1600px) {
+  @media #{$xl} {
     width: 420px;
   }
 }
