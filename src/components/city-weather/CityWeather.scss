@@ -2,7 +2,7 @@
   transition: transform 0.25s ease-out;
   position: relative;
   width: 100%;
-  font-size: $primary-font-size__pc;
+
   background-color: $background-color__card;
   z-index: 1;
   @include slow-appearance;
@@ -11,10 +11,6 @@
 .city-weather__box {
   display: flex;
   align-items: center;
-}
-
-.city-weather__main-info p {
-  font-size: $primary-font-size__pc;
 }
 
 .weather-icon {

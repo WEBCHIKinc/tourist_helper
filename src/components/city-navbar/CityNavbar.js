@@ -19,8 +19,8 @@ export const CityNavbar = ({ pageType, setPageType }) => {
 
   return (
     <div className="city-nav-bar">
-      <button className="city-nav-button" onClick={onButtonClick}>{buttons[0]}</button>
-      <button className="city-nav-button" onClick={onButtonClick}>{buttons[1]}</button>
+      <button className="city-nav-button text" onClick={onButtonClick}>{buttons[0]}</button>
+      <button className="city-nav-button text" onClick={onButtonClick}>{buttons[1]}</button>
     </div>
   );
 };

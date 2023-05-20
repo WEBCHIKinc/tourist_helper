@@ -2,7 +2,9 @@ $background-color: #6bdea1c4;
 $background-color__card: #818181;
 $primary-color__black: #25252589;
 $primary-color__white: #e9e8e8;
-$primary-font-size__pc: 25px;
+$text-line-height: 1.5;
+$text-font-size: 25px;
+$text-small-font-size: 16px;
 
 /* Breakpoints definition */
 $xs-min: 1px;
@@ -67,9 +69,17 @@ $xl: '(min-width: #{$xl-min}) and (max-width: #{$xl-max})';
 }
 
 body {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: $text-font-size;
+  line-height: $text-line-height;
   background-color: $background-color;
+}
+
+.text {
+  font-size: $text-font-size;
+}
+
+.text-small {
+  font-size: $text-small-font-size;
 }
 
 h1 {
@@ -106,8 +116,7 @@ p,
 ul,
 ol,
 a {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: $text-font-size;
 }
 
 .App {

@@ -12,7 +12,7 @@ export const CityWeather = ({ cityData }) => {
     const iconCode = data.weather[0].icon;
     temperature = data.main.temp;
     description = data.weather[0].description;
-    wind = `gusts ${data.wind.gust}m/s`;
+    wind = `gusts ${data.wind.speed}m/s`;
     iconURL = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
   }
 
