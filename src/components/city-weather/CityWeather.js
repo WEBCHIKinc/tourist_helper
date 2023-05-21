@@ -1,36 +1,36 @@
 import React from 'react';
 import { openWeatherMapApi } from '../../services/openWeatherMapService';
 
-export const CityWeather = ({ cityData }) => {
-  const { data, isSuccess } = openWeatherMapApi.useGetWeatherQuery(cityData.name);
-  let iconURL = '';
-  let temperature = '';
-  let description = '';
-  let wind = '';
+const LOADING = 'Loading...';
 
-  if (isSuccess) {
-    const iconCode = data.weather[0].icon;
-    temperature = data.main.temp;
-    description = data.weather[0].description;
-    wind = `gusts ${data.wind.speed}m/s`;
-    iconURL = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
-  }
+function getCityWeather(name) {
+  const { data, isSuccess } = openWeatherMapApi.useGetWeatherQuery(name);
+
+  return isSuccess ? {
+    iconCode: data.weather[0].icon,
+    temperature: data.main.temp,
+    description: data.weather[0].description,
+    wind: `gusts ${data.wind.speed}m/s`,
+    iconURL: `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+  } : {};
+}
+export const CityWeather = ({ cityData }) => {
+  const data = getCityWeather(cityData.name);
 
   return (
     <div className='city-weather'>
       <div className='city-weather__box'>
-        <img className='weather-icon' src={iconURL} alt='icon' />
-        <div className='city-weather__main-info'>
-          <h2>{temperature}</h2>
+        <img className='weather-icon' src={data.iconURL || ''} alt={LOADING} />
+        <div>
+          <h2>{data.temperature || LOADING}</h2>
           <p>
-            {description}
+            {data.description || LOADING}
           </p>
           <p>
-            {wind}
+            {data.wind || LOADING}
           </p>
         </div>
       </div>
     </div>
   );
 };
-

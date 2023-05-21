@@ -2,7 +2,6 @@
   transition: transform 0.25s ease-out;
   position: relative;
   width: 100%;
-
   background-color: $background-color__card;
   z-index: 1;
   @include slow-appearance;
