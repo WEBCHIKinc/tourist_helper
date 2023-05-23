@@ -2,6 +2,7 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { redusers } from './reducers';
 import { openWeatherMapApi } from '../services/openWeatherMapService';
 import { ipApi } from '../services/ipApiService';
+import { exchangeRateApi } from '../services/ExchangeRateService';
 
 const rootReducer = combineReducers(redusers);
 
@@ -10,6 +11,7 @@ export const store = configureStore({
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(
       openWeatherMapApi.middleware,
-      ipApi.middleware
+      ipApi.middleware,
+      exchangeRateApi.middleware
     )
 });

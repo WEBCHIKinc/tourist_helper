@@ -5,6 +5,7 @@ $primary-color__white: #e9e8e8;
 $text-line-height: 1.5;
 $text-font-size: 25px;
 $text-small-font-size: 16px;
+$animation-duration: 0.7s;
 
 /* Breakpoints definition */
 $xs-min: 1px;
@@ -35,16 +36,10 @@ $lg-xl: '(min-width: #{$lg-min}) and (max-width: #{$xl-max})';
 $xl: '(min-width: #{$xl-min}) and (max-width: #{$xl-max})';
 
 @mixin slow-appearance {
-  animation-name: slowAppearance;
-  animation-duration: 0.7s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  animation: slowAppearance $animation-duration ease 0s 1 normal forwards;
 }
 
-@keyframes #{slowAppearance} {
+@keyframes slowAppearance {
   0% {
     opacity: 0;
   }

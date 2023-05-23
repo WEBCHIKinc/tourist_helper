@@ -23,7 +23,7 @@ export const CityCard = () => {
       <CityName cityName={cityData.name} />
       {pageType === 'Info' && <CityInfo cityData={cityData} />}
       {pageType === 'Weather' && <CityWeather cityData={cityData} />}
-      {pageType === 'Converter' && <CityCurrencyConverter />}
+      {pageType === 'Converter' && <CityCurrencyConverter currency={cityData.currency} />}
       <CityNavbar pageType={pageType} setPageType={setPageType} />
     </div>
   );
