@@ -6,20 +6,12 @@ import { CityWeather } from '../city-weather/CityWeather';
 import { CityCurrencyConverter } from '../city-currency-converter/CityCurrencyConverter';
 import { CityName } from '../city-name/CityName';
 
-export const CityCard = () => {
+export const CityCard = ({cityData}) => {
   const [pageType, setPageType] = useState('Info');
-  const cityData = {
-    'id': 1,
-    'name': 'New York City',
-    'currency': 'USD',
-    'timezone': 'GMT-4',
-    'country': 'United States',
-    'language': 'English'
-  };
 
   return (
     <div className="city-card">
-      <CityPhoto />
+      <CityPhoto cityName={cityData.name}/>
       <CityName cityName={cityData.name} />
       {pageType === 'Info' && <CityInfo cityData={cityData} />}
       {pageType === 'Weather' && <CityWeather cityData={cityData} />}
