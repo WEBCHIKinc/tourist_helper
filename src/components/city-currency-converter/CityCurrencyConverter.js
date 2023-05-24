@@ -8,7 +8,7 @@ function getCurrencyData(currency, selectedCurrency, amount) {
 
   return isSuccess ? {
     currencies: Object.keys(data.conversion_rates),
-    result: `Result: ${(amount * data.conversion_rates[selectedCurrency]).toFixed(2)} ${currency}`
+    result: `Result: ${(amount / data.conversion_rates[selectedCurrency]).toFixed(2)} ${currency}`
   } : {};
 }
 
