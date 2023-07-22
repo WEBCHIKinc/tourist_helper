@@ -1,9 +1,9 @@
-$background-color: #6bdea1c4;
-$background-color__card: #818181;
-$primary-color__black: #25252589;
+$background-color: #c0c0c0;
+$background-color__card: #dfdede;
+$primary-color__black: #3a3a3a;
 $primary-color__white: #e9e8e8;
 $text-line-height: 1.5;
-$text-font-size: 25px;
+$text-font-size: 22px;
 $text-small-font-size: 16px;
 $animation-duration: 0.7s;
 
@@ -61,6 +61,7 @@ $xl: '(min-width: #{$xl-min}) and (max-width: #{$xl-max})';
   margin: 0;
   padding: 0;
   user-select: none;
+  font-family: 'Tektur', cursive;
 }
 
 body {
@@ -125,6 +126,7 @@ a {
   width: 90%;
   height: 90%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  background-color: #333333;
+  // background-color: #333333;
 }

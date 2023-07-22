@@ -4,7 +4,7 @@ import { cityPhotoAPI } from '../../services/cityPhotoService';
 
 function getPhoto(city) {
   const {data, isSuccess} = cityPhotoAPI.useGetPhotoQuery(city);
-  return isSuccess ? data.urls.full : NewYork;
+  return isSuccess ? data.urls.regular : NewYork;
 }
 
 export const CityPhoto = ({cityName}) => {

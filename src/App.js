@@ -7,11 +7,11 @@ function App() {
 
   return (
     <div className="App">
-      <div className="city-browser-content">
-        {cities.map((cityData) => (
-          <CityCard key={cityData.name} cityData={cityData}/>
-        ))}
-      </div>
+        <div className="city-browser-content">
+          {cities.map((cityData) => (
+            <CityCard key={cityData.name} cityData={cityData} />
+          ))}
+        </div>
     </div>
   );
 }

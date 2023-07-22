@@ -11,7 +11,7 @@ export const CityCard = ({cityData}) => {
 
   return (
     <div className="city-card">
-      <CityPhoto cityName={cityData.name}/>
+      <CityPhoto cityName={cityData.name} />
       <CityName cityName={cityData.name} />
       {pageType === 'Info' && <CityInfo cityData={cityData} />}
       {pageType === 'Weather' && <CityWeather cityData={cityData} />}

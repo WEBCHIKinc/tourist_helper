@@ -4,8 +4,7 @@ const baseParams = {
   // eslint-disable-next-line camelcase
   client_id: '46lB2Z8GaaoCqUZCkLms9HynR095eL3S5XzWwH0kCIg',
   orientation: 'landscape',
-  width: 1080,
-  height: 720
+  w: 1280
 };
 
 export const cityPhotoAPI = createApi({
