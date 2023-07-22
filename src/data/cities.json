@@ -1,0 +1,69 @@
+{
+  "cities": [
+    {
+      "id": 1,
+      "name": "New York City",
+      "currency": "USD",
+      "timezone": "GMT-4",
+      "country": "United States",
+      "language": "English"
+    },
+    {
+      "id": 2,
+      "name": "London",
+      "currency": "GBP",
+      "timezone": "GMT+1",
+      "country": "United Kingdom",
+      "language": "English"
+    },
+    {
+      "id": 3,
+      "name": "Paris",
+      "currency": "EUR",
+      "timezone": "GMT+2",
+      "country": "France",
+      "language": "French"
+    },
+    {
+      "id": 4,
+      "name": "Tokyo",
+      "currency": "JPY",
+      "timezone": "GMT+9",
+      "country": "Japan",
+      "language": "Japanese"
+    },
+    {
+      "id": 5,
+      "name": "Sydney",
+      "currency": "AUD",
+      "timezone": "GMT+10",
+      "country": "Australia",
+      "language": "English"
+    },
+    {
+      "id": 7,
+      "name": "Berlin",
+      "currency": "EUR",
+      "timezone": "GMT+2",
+      "country": "Germany",
+      "language": "German"
+    },
+    {
+      "id": 8,
+      "name": "Beijing",
+      "currency": "CNY",
+      "timezone": "GMT+8",
+      "country": "China",
+      "language": "Mandarin"
+    },
+    {
+      "id": 9,
+      "name": "Rome",
+      "currency": "EUR",
+      "timezone": "GMT+2",
+      "country": "Italy",
+      "language": "Italian"
+    }
+  ]
+}
+

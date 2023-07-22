@@ -1,0 +1,132 @@
+$background-color: #c0c0c0;
+$background-color__card: #dfdede;
+$primary-color__black: #3a3a3a;
+$primary-color__white: #e9e8e8;
+$text-line-height: 1.5;
+$text-font-size: 22px;
+$text-small-font-size: 16px;
+$animation-duration: 0.7s;
+
+/* Breakpoints definition */
+$xs-min: 1px;
+$xs-max: 599px;
+$sm-min: $xs-max + 1;
+$sm-max: 991px;
+$md-min: $sm-max + 1;
+$md-max: 1199px;
+$lg-min: $md-max + 1;
+$lg-max: 1599px;
+$xl-min: $lg-max + 1;
+$xl-max: 999999px;
+
+/* Media queries */
+$xs: '(min-width: #{$xs-min}) and (max-width: #{$xs-max})';
+$xs-sm: '(min-width: #{$xs-min}) and (max-width: #{$sm-max})';
+$xs-md: '(min-width: #{$xs-min}) and (max-width: #{$md-max})';
+$xs-lg: '(min-width: #{$xs-min}) and (max-width: #{$lg-max})';
+$sm: '(min-width: #{$sm-min}) and (max-width: #{$sm-max})';
+$sm-md: '(min-width: #{$sm-min}) and (max-width: #{$md-max})';
+$sm-lg: '(min-width: #{$sm-min}) and (max-width: #{$lg-max})';
+$sm-xl: '(min-width: #{$sm-min}) and (max-width: #{$xl-max})';
+$md: '(min-width: #{$md-min}) and (max-width: #{$md-max})';
+$md-lg: '(min-width: #{$md-min}) and (max-width: #{$lg-max})';
+$md-xl: '(min-width: #{$md-min}) and (max-width: #{$xl-max})';
+$lg: '(min-width: #{$lg-min}) and (max-width: #{$lg-max})';
+$lg-xl: '(min-width: #{$lg-min}) and (max-width: #{$xl-max})';
+$xl: '(min-width: #{$xl-min}) and (max-width: #{$xl-max})';
+
+@mixin slow-appearance {
+  animation: slowAppearance $animation-duration ease 0s 1 normal forwards;
+}
+
+@keyframes slowAppearance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@import "./components/city-photo/CityPhoto.scss";
+@import "./components/city-info/CityInfo.scss";
+@import "./components/city-navbar/CityNavbar.scss";
+@import "./components/city-card/CityCard.scss";
+@import "./components/city-name/CityName.scss";
+@import "./components/city-weather/CityWeather.scss";
+@import "./components/city-currency-converter/CityCurrencyConverter.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: 'Tektur', cursive;
+}
+
+body {
+  font-size: $text-font-size;
+  line-height: $text-line-height;
+  background-color: $background-color;
+}
+
+.text {
+  font-size: $text-font-size;
+}
+
+.text-small {
+  font-size: $text-small-font-size;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+p,
+ul,
+ol,
+a {
+  font-size: $text-font-size;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.city-browser-content {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  // background-color: #333333;
+}

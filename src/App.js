@@ -1,16 +1,17 @@
-import "./App.css";
-import MainCityPhoto from "./components/main-city-components/MainCityPhoto";
-import CityInfo from "./components/city-info/MainCityInfo";
-import MainCityNavbar from "./components/main-city-components/MainCityNavbar";
+import './App.scss';
+import { CityCard } from './components/city-card/CityCard';
+import { cityService } from './services/cityService';
 
 function App() {
+  const cities = cityService.getCities();
+
   return (
     <div className="App">
-      <div>
-        <MainCityPhoto />
-        <CityInfo />
-        <MainCityNavbar />
-      </div>
+        <div className="city-browser-content">
+          {cities.map((cityData) => (
+            <CityCard key={cityData.name} cityData={cityData} />
+          ))}
+        </div>
     </div>
   );
 }

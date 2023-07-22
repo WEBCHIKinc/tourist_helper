@@ -1,0 +1,24 @@
+.city-currency-converter {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  transition: transform 0.25s ease-out;
+  background-color: $background-color__card;
+  z-index: 1;
+  @include slow-appearance;
+}
+
+.city-currency-converter__box {
+  display: flex;
+  margin-bottom: 5%;
+  margin-top: 1%;
+}
+
+.city-currency-converter__input,
+.city-currency-converter__select {
+  width: 50%;
+}
+
+.city-currency-converter__select {
+  margin-left: 5%;
+}
